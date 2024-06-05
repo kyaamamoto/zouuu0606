@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン-ZOUUU-</title>
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+</head>
+<body>
+
+    <div id="wrap">
+
+        <div id="block1">
+    
+            <img src="./img/ZOUUUbanner.png" alt="zouuu">
+
+            <a href="./toroku.html" id="shin">新規会員登録</a>
+
+            <input type="email" name="email" placeholder="メールアドレス" id="email">
+
+            <input type="password" name="password" placeholder="パスワード" id="password">
+
+            <a href="#" id="log">ログイン</a>
+
+            
+            <div id="block2">
+                <label>
+                <input type="checkbox" id="check">
+                ログインしたまままにする</label>
+            </div>
+            
+                <a href="#" class="forget">ログインID・パスワードをお忘れですか？</a>
+            
+            <!-- <p>他サービスのIDでログイン</p> -->
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        
+        // Firebaseを使うための準備
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword }
+                        from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+        import { getFirestore } 
+            from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "",
+          authDomain: "",
+          projectId: "",
+          storageBucket: "",
+          messagingSenderId: "",
+          appId: ""
+        };
+
+        // Firebase初期化
+    const app = initializeApp(firebaseConfig); //鍵をつくる
+    const auth = getAuth(app); //認証する→鍵穴に入れる
+
+    document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('log').addEventListener('click', (e) => {
+                e.preventDefault();
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                signInWithEmailAndPassword(auth, email, password)
+                    .then((userCredential) => {
+                        // ログイン成功
+                        window.location.href = 'member.html';
+                    })
+                    .catch((error) => {
+                        // エラーが発生
+                        alert('エラーが発生しました: ' + error.message);
+                    });
+            });
+        });
+
+
+
+    </script>
+
+
+</body>
+</html>

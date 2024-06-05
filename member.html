@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ</title>
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+</head>
+<body>
+    <div id="wrap">
+        
+        <img src="./img/ZOUUUbanner.png" alt="zouuu">
+        
+        <h1>マイページ</h1>
+        <p>あなたについて教えてください</p>
+
+        <div class="katamari">
+            <label for="username">ユーザー名</label>
+            <input type="text">
+        </div>
+
+        <div class="katamari">
+            <label for="seibetsu">性別</label>
+            <select name="seibetsu" id="seibetst">
+                <option value="first">選択してください</option>
+                <option value="men">男性</option>
+                <option value="woman">女性</option>
+                <option value="else">その他</option>
+            </select>     
+        </div>
+
+        <div class="katamari">
+            <label for="jusho">お住まいの地域</label>
+            <input type="text" placeholder="都道府県">
+            <input type="text" placeholder="市区町村">
+        </div>
+    
+    </div>
+
+</body>
+</html>

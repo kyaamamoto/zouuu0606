@@ -1,0 +1,78 @@
+#wrap {
+    display: grid;
+    justify-content: center;
+}
+
+#block1 {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+}
+
+ 
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+input {
+    border: 1px solid gray;
+    height: 40px;
+    border-radius: 8px;
+}
+
+#shin {
+    background-color: rgba(122, 6, 6, 0.875);
+    color: white;
+    padding: 20px 100px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#shin:hover {
+    background-color: rgba(122, 6, 6, 0.607);
+}
+
+#log {
+    background-color: #0c344e;
+    color: white;
+    padding: 20px 100px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#log:hover {
+    background-color: #0c344eb7;
+}
+
+p {
+    text-align: center;
+}
+
+#check {
+    vertical-align: middle;
+    gap: 20px;
+}
+
+#block2 {
+   display: flex;
+   justify-content: center;
+}
+
+.forget {
+    text-decoration: none;
+}
+
+.forget:hover {
+    text-decoration: underline;
+}
+
+.katamari {
+    padding: 10px;
+}
+

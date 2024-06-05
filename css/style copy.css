@@ -1,0 +1,159 @@
+#wrap {
+    justify-content: center;
+}
+
+#wrap2 {
+    display: grid;
+    justify-content: center;
+}
+
+#block1 {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+}
+
+#block10 {
+    display: grid;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+input {
+    border: 1px solid gray;
+    height: 40px;
+    border-radius: 8px;
+}
+
+#shin {
+    background-color: rgba(122, 6, 6, 0.875);
+    color: white;
+    padding: 20px 100px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#shin:hover {
+    background-color: rgba(122, 6, 6, 0.607);
+}
+
+#login {
+    background-color: #0c344e;
+    color: white;
+    padding: 20px 100px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#login:hover {
+    background-color: #0c344eb7;
+}
+
+p {
+    text-align: center;
+}
+
+#check {
+    vertical-align: middle;
+    gap: 20px;
+}
+
+#block2 {
+   display: flex;
+   justify-content: center;
+}
+
+.forget {
+    text-decoration: none;
+}
+
+.forget:hover {
+    text-decoration: underline;
+}
+
+textarea {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto 50px;
+    display: block;
+    resize: none;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 20px;
+  }
+  
+  input {
+    width: 500px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto 50px;
+  }
+ 
+  
+  #send {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto 50px;
+    display: block;
+    font-size: 16px;
+    background-color: #0c344e;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #output {
+    width: 500px;
+    display: block;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .msg:nth-child(even){
+    margin-left: auto;
+    width: 200px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 6px;
+    background: rgb(95, 219, 95);
+  }
+  
+  .msg:nth-child(odd){
+    margin-right: auto;
+    width: 200px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 6px;
+    background: (95, 219, 95);
+  }
+
+  #block100 {
+    background-color: rgb(240, 238, 238);
+  }
+
+  input {
+    background-color: white;
+  }
